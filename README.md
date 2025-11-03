@@ -4,7 +4,7 @@
   <p>
     <i>An Arma 3 persistent multiplayer scenario about guerilla warfare tactics.</i>
     <br/>
-    <i>Fork of Antistasi Plus Version focused on expanding templates, maps and features.</i>
+    <i>Fork of Antistasi Ultimate Version that classifies AirStrikes and CAS that can shoot you before you see them, or spawn directly above you, as unfair.</i>
   </p>
   <!-- <p>
     <a href="https://github.com/igorkis-scrts/A3-Antistasi-Plus/releases/latest">
