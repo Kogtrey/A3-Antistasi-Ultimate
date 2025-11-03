@@ -1,6 +1,6 @@
 <div align="center">
   <img alt="Antistasi Ultimate" width="200" height="200" src="https://github.com/SilenceIsFatto/A3-Antistasi-Ultimate/assets/78276788/10d6e9f2-66bc-47a7-9ff5-2054b65b0e26">
-  <h1>Antistasi Ultimate</h1>
+  <h1>Kloggers Antistasi Ultimate</h1>
   <p>
     <i>An Arma 3 persistent multiplayer scenario about guerilla warfare tactics.</i>
     <br/>
