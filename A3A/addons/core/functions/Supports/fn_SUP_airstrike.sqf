@@ -33,20 +33,7 @@ private _weightChemical = if (_side == Invaders) then {_weightCluster} else {0};
 private _bombType = selectRandomWeighted ["HE", _weightHE, "CLUSTER", _weightCluster, "NAPALM", _weightNapalm, "CHEMICAL", _weightChemical];
 
 private _faction = Faction(_side);
-// <---------- Modified ---------->
-private _allCAS = (_faction get "vehiclesPlanesCAS") + (_faction get "vehiclesPlanesLargeCAS");
-
-// Filter to only helicopters
-private _helicopters = _allCAS select {_x isKindOf "Helicopter"};
-
-// If no helicopters available, airstrike fails
-if (count _helicopters == 0) exitWith { 
-    Debug_1("No helicopters available for %1 support, jets are disabled", _supportName); 
-    -1; 
-};
-
-private _planeType = selectRandom _helicopters;
-// ----------- End Modified -----------
+private _planeType = selectRandom ((_faction get "vehiclesPlanesCAS") + (_faction get "vehiclesPlanesLargeCAS"));
 
 if (_delay < 0) then { _delay = (0.5 + random 1) * (300 - 15*tierWar - 1*_aggroValue) };
 
