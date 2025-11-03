@@ -33,20 +33,20 @@ private _initData = [
     // weight/lowair: Relative weighting for selection. May be adjusted by availability functions.
     // effradius: Strike radius, used for detecting friendly fire
     // strikepower: Approx resource value per strike for multi-target supports
-    ["AIRSTRIKE",       "AREA", 0.5, 0.1, 150,   0,  "", "vehiclesPlanesCAS"],           // balanced against carpetBombs (50/50 at tier 10), total will be 0.5
+    ["AIRSTRIKE",       "AREA", 0.5, 0.1, 150,   0,  "u", "vehiclesPlanesCAS"],           // balanced against carpetBombs (50/50 at tier 10), total will be 0.5
     ["ARTILLERY",       "AREA", 0.5, 0.9, 150,  85,  "", "vehiclesArtillery"],           // balanced against mortars (50/50 at tier 10), total will be 0.5/0.9
     ["MORTAR",          "AREA", 0.5, 0.9, 100,  50,  "", "staticMortars"],
     ["HOWITZER",        "AREA", 0.5, 0.9, 125,  65,  "", "staticHowitzers"],
     ["ASF",           "TARGET", 1.0, 0.4,   0, 100,  "", "vehiclesPlanesAA"],            // balanced against SAMs (if available), 66/33 weighting
-    ["CAS",           "TARGET", 0.5, 0.3,   0, 100,  "", "vehiclesPlanesCAS"],
+    ["CAS",           "TARGET", 0.5, 0.3,   0, 100,  "u", "vehiclesPlanesCAS"],
     ["TANK",          "TARGET", 0.5, 0.7,   0, 100,  "", ""],                            // balanced against CAS, lowAir based
-    ["CASDIVE",       "TARGET", 0.8, 0.3,   0, 100,  "", "vehiclesPlanesCAS"],
+    ["CASDIVE",       "TARGET", 0.8, 0.3,   0, 100,  "u", "vehiclesPlanesCAS"],
     ["QRFLAND",       "TROOPS", 1.0, 1.4,   0,   0,  "", ""],
     ["QRFAIR",        "TROOPS", 0.5, 0.1,   0,   0,  "", ""],
     ["QRFVEHAIRDROP", "TROOPS", 0.3, 0.1,   0,   0,  "", "vehiclesPlanesTransport"],
     ["QRFORBITAL",        "TROOPS", 0.5, 0.1,   0,   0,  "fu", "vehiclesDropPod"],     ///needs to be balanced
     ["CARPETBOMBS",     "AREA", 0.5, 0.1, 200,   0, "u", ""],                            // balanced against airstrikes
-    ["GUNSHIP",         "AREA", 0.2, 0.1, 0, 80, "", "vehiclesPlanesGunship"],                   //u      // uh. Does AREA work for this? Only lasts 5 minutes so maybe...
+    ["GUNSHIP",         "AREA", 0.2, 0.1, 0, 80, "u", "vehiclesPlanesGunship"],                   //u      // uh. Does AREA work for this? Only lasts 5 minutes so maybe...
     ["SAM",           "TARGET", 1.0, 1.0,   0, 100, "u", ""],                            // balanced against ASF
     ["CRUISEMISSILE", "AREA", 0.3, 0.1, 150,   100, "u", ""],
     ["ORBITALSTRIKE",   "AREA", 0.2, 0.0, 300,   0, "f", ""],
